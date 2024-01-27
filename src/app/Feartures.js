@@ -30,7 +30,6 @@ const tabsData = [
       _selected: { color: 'black' },
     },
   },
-
   {
     label: 'Easy Sharing',
     content: 'Content for Easy Sharing',
