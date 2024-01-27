@@ -13,9 +13,9 @@ import React from 'react'
 
 export default function Hero2() {
   return (
-    <Box mt="8">
+    <Box my={{ base: 26, lg: 36 }}>
       <Container maxWidth={'8xl'}>
-        <SimpleGrid columns={{ base: 1, lg: 2 }} mt={10} maxW={'9xl'}>
+        <SimpleGrid columns={{ base: 1, lg: 2 }} m={38} maxW={'9xl'}>
           {/* <Container> */}
           <Box order={{ base: 2, lg: '1' }} position={'relative'}>
             <Image
@@ -26,7 +26,7 @@ export default function Hero2() {
             <Box
               position={'absolute'}
               left={'-20%'}
-              top={'25%'}
+              top={'40%'}
               w={'100%'}
               h={'80%'}
               bgColor={'blue'}
@@ -35,12 +35,12 @@ export default function Hero2() {
             />
           </Box>
 
-          <Container order={{ base: 2, lg: '1' }} mt={{ base: '8', md: '8' }}>
+          <Container order={{ base: 2, lg: '1' }} mt={{ base: '28', lg: '20' }}>
             <Box textAlign={{ base: 'center', lg: 'left' }}>
-              <Heading mt={'8'} fontSize={{ base: 'xl', md: '4xl' }}>
+              <Heading fontSize={{ base: '2xl', lg: '5xl' }}>
                 Bookmark in one click
               </Heading>
-              <Text color={'gray'} mt={'8'} fontSize={{ base: 'md', lg: 'lg' }}>
+              <Text color={'gray'} mt={'4'} fontSize={{ base: 'lg', lg: 'xl' }}>
                 Organize your bookmarks however you like. Our simple
                 drag-and-drop interface gives you complete control over how you
                 manage your favourite sites.

@@ -17,22 +17,25 @@ const cardData = [
     logoSrc: '/logo-chrome.svg',
     heading: 'Add to Chrome',
     description: 'Minimum version 62',
+    btn: 'Add & Install Extension  ',
   },
   {
     logoSrc: '/logo-firefox.svg',
     heading: 'Add to Firefox',
     description: 'Minimum version 55',
+    btn: 'Add & Install Extension',
   },
   {
     logoSrc: '/logo-opera.svg',
     heading: 'Add to Opera',
     description: 'Minimum version 42',
+    btn: 'Add & Install Extension',
   },
 ]
 
 export default function Cards() {
   return (
-    <Container maxW={'8xl'} mt={'16'}>
+    <Container maxW={'7xl'} mt={{ base: 24, lg: 30 }}>
       <Box>
         <Container textAlign={'center'} maxW={'2xl'}>
           <Heading mt={'4'} fontSize={{ base: '2xl', md: '5xl' }}>
@@ -45,22 +48,22 @@ export default function Cards() {
           </Text>
         </Container>
       </Box>
-      <Container maxW={'6xl'} py={'px'}>
+      <Container maxW={'5xl'}>
         <SimpleGrid
-          columns={{ base: 1, md: 3 }}
-          justifyContent={'center'}
-          alignContent={'center'}
+          columns={{ base: 1, lg: 3 }}
+          alignItems={'center'}
+          justifyItems={'center'}
           mt={10}
-          spacing={10}
+          gap={{ base: 20, lg: 8 }}
+          bot
         >
           {cardData.map((card, index) => (
             <Card
               key={index}
-              boxShadow="lg"
-              minW={{ base: 'xs', md: 'sm' }}
+              boxShadow="xl"
+              maxW={{ base: 'xs', lg: 'xs' }}
               py={4}
-              position={'relative'}
-              bottom={-10}
+              mb={index === 1 ? -20 : index === 2 ? -32 : 0}
             >
               <Image src={card.logoSrc} alt="" w={'28'} mb={8} mx={'auto'} />
               <Box textAlign={'center'} py={10}>
@@ -71,10 +74,10 @@ export default function Cards() {
                   {card.description}
                 </Text>
               </Box>
+              <Image src="/bg-dots.svg" alt="" mb={6} />
 
-              <Image src="/bg-dots.svg" alt="" w={10} mb="2" />
               <Button colorScheme="blue" mx={10}>
-                Get it on Chrome
+                {card.btn}
               </Button>
             </Card>
           ))}

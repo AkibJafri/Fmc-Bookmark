@@ -1,95 +1,67 @@
-import React, { useState } from 'react'
 import {
-  Box,
   Container,
-  Heading,
-  Text,
-  Card,
-  StackDivider,
-  Divider,
-  Stack,
   Tabs,
   TabList,
   Tab,
   TabPanels,
   TabPanel,
-  Link,
-  Button,
+  Divider,
 } from '@chakra-ui/react'
+import React from 'react'
 
-const data = [
+const tabsData = [
   {
-    id: 1,
-    title: 'Book in one Click',
-    desc: 'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites',
-    link: 'More Info',
-    button: 'Simple Bookmarking',
+    label: 'Simple Bookmarking',
+    content: 'Content for Simple Bookmarking',
+    styles: {
+      fontWeight: '500',
+      fontSize: { base: 'md', lg: 'xl' },
+      color: 'grey',
+      _selected: { color: 'black' },
+    },
   },
   {
-    id: 2,
-    title: 'Intelligent search',
-    desc: 'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites',
-    link: 'More Info',
-    button: 'Simple Bookmarking',
+    label: 'Speedy Searching',
+    content: 'Content for Speedy Searching',
+    styles: {
+      fontWeight: '500',
+      fontSize: { base: 'md', lg: 'xl' },
+      color: 'grey',
+      _selected: { color: 'black' },
+    },
   },
   {
-    id: 3,
-    title: 'Book in one Click',
-    desc: 'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites',
-    link: 'More Info',
-    button: 'Simple Bookmarking',
+    label: 'Easy Sharing',
+    content: 'Content for Easy Sharing',
+    styles: {
+      fontWeight: '500',
+      fontSize: { base: 'md', lg: 'xl' },
+      color: 'grey',
+      _selected: { color: 'black' },
+    },
   },
 ]
 
-export default function Features() {
-  const [activeTab, setActiveTab] = useState(0)
-
-  const handleTabChange = (index) => {
-    setActiveTab(index)
-  }
-
+export default function YourComponent() {
   return (
-    <Box mt={'150px'} textAlign={'center'} mb={10}>
-      <Container maxW={'xl'}>
-        <Heading fontSize={{ base: '3xl', md: '5xl' }}>Features</Heading>
-        <Text color={'gray'} mt={'8'} fontSize={{ base: 'md', lg: 'lg' }}>
-          Our aim is to make it quick and easy for you to access your favourite
-          websites. Your bookmarks sync between your devices so you can access
-          them on the go.
-        </Text>
-        <Box mt={8}>
-          <Tabs
-            variant="soft-rounded"
-            colorScheme="teal"
-            onChange={handleTabChange}
-          >
-            <TabList>
-              {data.map((feature, index) => (
-                <Tab key={index}>{feature.title}</Tab>
-              ))}
-            </TabList>
-            <Divider mt={4} />
-            <TabPanels>
-              {data.map((feature, index) => (
-                <TabPanel key={index}>
-                  <Card>
-                    <Heading fontSize="2xl">{feature.title}</Heading>
-                    <Text color="gray" fontSize="lg" mt={4}>
-                      {feature.desc}
-                    </Text>
-                    <Link href="#" color="teal" mt={4} display="block">
-                      {feature.link}
-                    </Link>
-                    <Button colorScheme="teal" mt={4}>
-                      {feature.button}
-                    </Button>
-                  </Card>
-                </TabPanel>
-              ))}
-            </TabPanels>
-          </Tabs>
-        </Box>
-      </Container>
-    </Box>
+    <Container maxW={'4xl'} mt={28}>
+      <Tabs variant="enclosed">
+        <TabList
+          spacing={4}
+          justifyContent={{ base: 'center', md: 'space-between' }}
+          alignItems="center"
+          flexDirection={{ base: 'column', md: 'row' }}
+        >
+          {tabsData.map((tab, index) => (
+            <React.Fragment key={index}>
+              <Tab {...tab.styles}>{tab.label}</Tab>
+              {index < tabsData.length - 1 && (
+                <Divider orientation="vertical" />
+              )}
+            </React.Fragment>
+          ))}
+        </TabList>
+      </Tabs>
+    </Container>
   )
 }

@@ -6,16 +6,18 @@ import Feartures from './Feartures'
 import Hero2 from './Hero2'
 import Cards from './Cards'
 import Faq from './Faq'
+import Footer from './Footer'
 
 export default function page() {
   return (
     <Box overflowX={'hidden'}>
       <NavBar />
       <Hero />
-      {/* <Feartures /> */}
+      <Feartures />
       <Hero2 />
       <Cards />
       <Faq />
+      <Footer />
     </Box>
   )
 }
