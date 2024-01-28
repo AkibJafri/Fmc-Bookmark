@@ -41,12 +41,12 @@ export default function Hero() {
                 websites. Open a new browser tab and see your sites load
                 instantly. Try it for free.
               </Text>
-              <ButtonGroup spacing="6" mt={'8'}>
+              <ButtonGroup spacing={{ base: 2, lg: 6 }} mt={'8'}>
                 <Button
                   bgColor={'p.softBlue'}
                   color={'white'}
-                  py={6}
-                  px={6}
+                  py={{ base: 5, lg: 6 }}
+                  px={{ base: 3, lg: 6 }}
                   border={'2px solid transparent'}
                   _hover={{
                     border: '2px solid blue',
@@ -58,8 +58,8 @@ export default function Hero() {
                   Get it on Chrome
                 </Button>
                 <Button
-                  py={6}
-                  px={6}
+                  py={{ base: 5, lg: 6 }}
+                  px={{ base: 3, lg: 6 }}
                   border={'2px solid transparent'}
                   _hover={{
                     border: '2px solid green',
