@@ -36,7 +36,7 @@ const NavBar = () => {
         align="center"
         justify="space-between"
         padding="1rem"
-        color="grey"
+        color="black"
       >
         {/* Brand/logo */}
         <Image src="/logo-bookmark.svg" alt="logo" />
@@ -44,16 +44,44 @@ const NavBar = () => {
         {/* Navigation links (Hidden on smaller screens) */}
         <Box display={{ base: 'none', lg: 'block' }}>
           <Flex align="center">
-            <Link mr={6} href="#">
+            <Link
+              mr={7}
+              href="#"
+              style={{ textDecoration: 'none' }}
+              _hover={{ color: 'red' }}
+              fontWeight={'500'}
+            >
               FEATURES
             </Link>
-            <Link mr={6} href="#">
+            <Link
+              mr={7}
+              href="#"
+              style={{ textDecoration: 'none' }}
+              _hover={{ color: 'red' }}
+              fontWeight={'500'}
+            >
               PRICING
             </Link>
-            <Link mr={6} href="#">
+            <Link
+              mr={7}
+              href="#"
+              style={{ textDecoration: 'none' }}
+              _hover={{ color: 'red' }}
+              fontWeight={'500'}
+            >
               CONTACT
             </Link>
-            <Button colorScheme={'red'} px={'8'}>
+            <Button
+              colorScheme={'red'}
+              px={'9'}
+              border={'2px solid transparent'}
+              _hover={{
+                border: '2px solid red',
+                bg: 'white',
+                color: 'red',
+              }}
+              shadow={'md'}
+            >
               LOGIN
             </Button>
           </Flex>
@@ -124,7 +152,7 @@ const NavBar = () => {
                   </Link>
                   <Button
                     px={'30vw'}
-                    py={'6'}
+                    py={'7'}
                     border={'2px solid white'}
                     _hover={{
                       border: '2px solid blue',

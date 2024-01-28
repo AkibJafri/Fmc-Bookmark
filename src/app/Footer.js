@@ -14,16 +14,16 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <Box>
-      <Container maxW={'full'} py={'50'} bgColor={'blue.500'} mx={'auto'}>
+    <Box bgColor={'blue.500'}>
+      <Container maxW={'lg'} py={'50'} mx={'auto'}>
         <Box textAlign={'center'} mt={20} textColor={'white'}>
-          <Text mt={20} letterSpacing={10}>
-            35,000+ already joined
+          <Text mt={20} letterSpacing={8} fontSize={'xl'} fontWeight={'medium'}>
+            35,000+ ALREADY JOINED
           </Text>
           <Heading
             fontSize={{ base: '2xl', md: '4xl' }}
             mt={10}
-            fontWeight={'bold'}
+            fontWeight={'semibold'}
           >
             Stay up-to-date with what we’re doing
           </Heading>
@@ -40,7 +40,8 @@ export default function Footer() {
             type="email"
             placeholder="Enter your email address "
             required
-            width={{ base: '60%', lg: '30%' }}
+            px={6}
+            py={6}
             color="teal"
             _placeholder={{ color: 'inherit' }}
             bgColor={'white'}
@@ -48,7 +49,7 @@ export default function Footer() {
           <Button
             colorScheme={'red'}
             px={8}
-            width={{ base: '60%', lg: 'auto' }}
+            py={6}
             border={'2px solid transparent'}
             _hover={{
               border: '2px solid red',
