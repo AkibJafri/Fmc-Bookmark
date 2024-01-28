@@ -30,10 +30,16 @@ export default function Faq() {
           <AccordionItem>
             <h2>
               <AccordionButton>
-                <Box as="span" flex="1" textAlign="left" fontSize={'xl'}>
+                <Box
+                  as="span"
+                  flex="1"
+                  textAlign="left"
+                  fontSize={'xl'}
+                  fontWeight={'500'}
+                >
                   What is Bookmark?
                 </Box>
-                <AccordionIcon />
+                <AccordionIcon color={'blue'} _hover={{ color: 'red' }} />
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>
@@ -47,10 +53,16 @@ export default function Faq() {
           <AccordionItem>
             <h2>
               <AccordionButton>
-                <Box as="span" flex="1" textAlign="left" fontSize={'xl'}>
+                <Box
+                  as="span"
+                  flex="1"
+                  textAlign="left"
+                  fontSize={'xl'}
+                  fontWeight={'500'}
+                >
                   How can I request a new browser?
                 </Box>
-                <AccordionIcon />
+                <AccordionIcon color={'blue'} _hover={{ color: 'red' }} />
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>
@@ -64,10 +76,16 @@ export default function Faq() {
           <AccordionItem>
             <h2>
               <AccordionButton>
-                <Box as="span" flex="1" textAlign="left" fontSize={'xl'}>
+                <Box
+                  as="span"
+                  flex="1"
+                  textAlign="left"
+                  fontSize={'xl'}
+                  fontWeight={'500'}
+                >
                   Is there a mobile app?
                 </Box>
-                <AccordionIcon />
+                <AccordionIcon color={'blue'} _hover={{ color: 'red' }} />
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>
@@ -81,10 +99,16 @@ export default function Faq() {
           <AccordionItem>
             <h2>
               <AccordionButton>
-                <Box as="span" flex="1" textAlign="left " fontSize={'xl'}>
+                <Box
+                  as="span"
+                  flex="1"
+                  textAlign="left "
+                  fontSize={'xl'}
+                  fontWeight={'500'}
+                >
                   What about other Chromium browsers?
                 </Box>
-                <AccordionIcon />
+                <AccordionIcon color={'blue'} _hover={{ color: 'red' }} />
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>

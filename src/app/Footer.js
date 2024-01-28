@@ -77,8 +77,14 @@ export default function Footer() {
             <Image src="logo-bookmark.svg" alt="Top Logo" />
           </Box>
           {/* Features Section */}
-          <Box mt={{ base: 6, lg: 8 }} mx={{ md: 4 }}>
-            <Heading fontSize={'lg'} color={'white'} mb={4}>
+          <Box mt={{ base: 6, lg: 8 }}>
+            <Heading
+              fontSize={'lg'}
+              color={'white'}
+              mb={4}
+              fontWeight={'300'}
+              mr={{ lg: 4 }}
+            >
               Features
             </Heading>
           </Box>
@@ -88,25 +94,26 @@ export default function Footer() {
             color={'lightslategray'}
             cursor={'pointer'}
             mt={{ base: 6, lg: 8 }}
-            mx={{ md: 4 }}
           >
             <Heading
               fontSize={'lg'}
               color={'white'}
               mb={4}
-              fontWeight={'bolder'}
+              fontWeight={'300'}
+              mr={{ lg: 4 }}
             >
               Pricing
             </Heading>
           </Box>
 
           {/* Company Section */}
-          <Box mt={{ base: 6, lg: 8 }} mx={{ md: 4 }}>
+          <Box mt={{ base: 6, lg: 8 }}>
             <Heading
               fontSize={'lg'}
               color={'white'}
               mb={4}
-              fontWeight={'bolder'}
+              fontWeight={'300'}
+              mr={{ lg: 4 }}
             >
               Contact
             </Heading>

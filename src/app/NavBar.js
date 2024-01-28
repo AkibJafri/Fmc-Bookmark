@@ -165,6 +165,25 @@ const NavBar = () => {
                   >
                     LOGIN
                   </Button>
+                  <Flex justify="center" mt={8}>
+                    <Box mx={2}>
+                      <Image
+                        src="/icon-facebook.svg"
+                        alt="Facebook"
+                        w={6}
+                        h={6}
+                      />
+                    </Box>
+
+                    <Box mx={2}>
+                      <Image
+                        src="/icon-twitter.svg"
+                        alt="Instagram"
+                        w={6}
+                        h={6}
+                      />
+                    </Box>
+                  </Flex>
                 </VStack>
               </DrawerBody>
             </DrawerContent>
