@@ -72,7 +72,7 @@ export default function Cards() {
                   {card.description}
                 </Text>
               </Box>
-              <Image src="/bg-dots.svg" alt="" mb={6} />
+              <Image src="/bg-dots.svg" alt="" my={7} />
 
               <Button
                 py={6}
