@@ -53,7 +53,7 @@ export default function Cards() {
           alignItems={'center'}
           justifyItems={'center'}
           mt={10}
-          spacing={{ base: 6, lg: 2 }}
+          spacing={{ base: 6, lg: 0 }}
         >
           {cardData.map((card, index) => (
             <Card
@@ -64,7 +64,7 @@ export default function Cards() {
               mb={{ lg: index === 1 ? -20 : index === 2 ? -32 : 0 }}
             >
               <Image src={card.logoSrc} alt="" w={'28'} mb={8} mx={'auto'} />
-              <Box textAlign={'center'} py={10}>
+              <Box textAlign={'center'}>
                 <Heading fontSize={{ base: '2xl', lg: '2xl' }}>
                   {card.heading}
                 </Heading>
@@ -77,7 +77,8 @@ export default function Cards() {
               <Button
                 py={6}
                 px={8}
-                colorScheme="blue"
+                bgColor={'p.softBlue'}
+                color={'white'}
                 mx={'auto'}
                 border={'2px solid transparent'}
                 _hover={{

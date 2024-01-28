@@ -8,6 +8,7 @@ import {
   Text,
   ButtonGroup,
   Button,
+  Theme,
 } from '@chakra-ui/react'
 import React from 'react'
 
@@ -25,11 +26,11 @@ export default function Hero2() {
             />
             <Box
               position={'absolute'}
-              left={'-20%'}
+              left={'-50%'}
               top={'40%'}
-              w={'99%'}
+              w={'125%'}
               h={'84%'}
-              bgColor={'blue'}
+              bgColor={'p.softBlue'}
               zIndex={-1}
               borderRadius={'0 200px  200px 0'}
             />
@@ -44,14 +45,19 @@ export default function Hero2() {
               <Heading fontSize={{ base: '2xl', lg: '4xl' }}>
                 Bookmark in one click
               </Heading>
-              <Text color={'gray'} mt={'4'} fontSize={{ base: 'lg', lg: 'xl' }}>
+              <Text
+                color={'n.grayishBlue'}
+                mt={'4'}
+                fontSize={{ base: 'lg', lg: 'xl' }}
+              >
                 Organize your bookmarks however you like. Our simple
                 drag-and-drop interface gives you complete control over how you
                 manage your favourite sites.
               </Text>
               <Button
                 mt={8}
-                colorScheme="blue"
+                bgColor={'p.softBlue'}
+                color={'white'}
                 p={6}
                 border={'2px solid transparent'}
                 _hover={{

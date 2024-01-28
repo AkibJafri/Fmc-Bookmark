@@ -14,7 +14,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <Box bgColor={'blue.500'}>
+    <Box bgColor={'p.softBlue'} color={'white'} s>
       <Container maxW={'lg'} py={'50'} mx={'auto'}>
         <Box textAlign={'center'} mt={20} textColor={'white'}>
           <Text mt={20} letterSpacing={8} fontSize={'xl'} fontWeight={'medium'}>
@@ -47,14 +47,15 @@ export default function Footer() {
             bgColor={'white'}
           />
           <Button
-            colorScheme={'red'}
-            px={{ base: '40%', md: 6 }}
+            px={{ base: '40%', md: 8 }}
             py={6}
+            bgColor={' p.softRed'}
+            color={'white'}
             border={'2px solid transparent'}
             _hover={{
               border: '2px solid red',
               bg: 'white',
-              color: 'black',
+              color: 'p.softRed',
             }}
             shadow={'md'}
           >
@@ -63,7 +64,13 @@ export default function Footer() {
         </Flex>
       </Container>
 
-      <Box bgColor={'black'} py={6} px={4} textAlign={'center'} mx={'auto'}>
+      <Box
+        bgColor={' n.veryDarkBlue'}
+        py={6}
+        px={4}
+        textAlign={'center'}
+        mx={'auto'}
+      >
         {/* Sections */}
         <Flex
           direction={{ base: 'column', md: 'row' }}
@@ -73,7 +80,7 @@ export default function Footer() {
           maxW={{ base: '100%', md: '900px' }}
           mx="auto"
         >
-          <Box justify="center" mt={7}>
+          <Box justify="center" mt={7} filter="invert(1)">
             <Image src="logo-bookmark.svg" alt="Top Logo" />
           </Box>
           {/* Features Section */}

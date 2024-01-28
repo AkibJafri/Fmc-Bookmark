@@ -126,7 +126,8 @@ export default function Faq() {
         mt={14}
       >
         <Button
-          colorScheme="blue"
+          bgColor={'p.softBlue'}
+          color={'white'}
           p={6}
           mx={10}
           border={'2px solid transparent'}

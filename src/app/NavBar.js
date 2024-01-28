@@ -48,7 +48,7 @@ const NavBar = () => {
               mr={7}
               href="#"
               style={{ textDecoration: 'none' }}
-              _hover={{ color: 'red' }}
+              _hover={{ color: 'p.softRed' }}
               fontWeight={'500'}
             >
               FEATURES
@@ -57,7 +57,7 @@ const NavBar = () => {
               mr={7}
               href="#"
               style={{ textDecoration: 'none' }}
-              _hover={{ color: 'red' }}
+              _hover={{ color: 'p.softRed' }}
               fontWeight={'500'}
             >
               PRICING
@@ -66,19 +66,20 @@ const NavBar = () => {
               mr={7}
               href="#"
               style={{ textDecoration: 'none' }}
-              _hover={{ color: 'red' }}
+              _hover={{ color: 'p.softRed' }}
               fontWeight={'500'}
             >
               CONTACT
             </Link>
             <Button
-              colorScheme={'red'}
               px={'9'}
               border={'2px solid transparent'}
+              bgColor={' p.softRed'}
+              color={'white'}
               _hover={{
                 border: '2px solid red',
                 bg: 'white',
-                color: 'red',
+                color: 'p.softRed',
               }}
               shadow={'md'}
             >
@@ -129,6 +130,8 @@ const NavBar = () => {
                     borderBottom={'.2px solid white'}
                     w={'full'}
                     textAlign={'center'}
+                    style={{ textDecoration: 'none' }}
+                    _hover={{ color: 'p.softRed' }}
                   >
                     FEATURES
                   </Link>
@@ -138,6 +141,8 @@ const NavBar = () => {
                     borderBottom={'1px solid white'}
                     w={'full'}
                     textAlign={'center'}
+                    style={{ textDecoration: 'none' }}
+                    _hover={{ color: 'p.softRed' }}
                   >
                     PRICING
                   </Link>
@@ -147,6 +152,8 @@ const NavBar = () => {
                     borderBottom={'1px solid white'}
                     w={'full'}
                     textAlign={'center'}
+                    style={{ textDecoration: 'none' }}
+                    _hover={{ color: 'p.softRed' }}
                   >
                     CONTACT
                   </Link>

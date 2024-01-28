@@ -21,11 +21,11 @@ export default function Hero() {
             <Image src="/illustration-hero.svg" alt="Hamburgure" mx={'auto'} />
             <Box
               position={'absolute'}
-              right={'-20%'}
+              right={'-50%'}
               top={'25%'}
-              w={'100%'}
+              w={'120%'}
               h={'80%'}
-              bgColor={'blue'}
+              bgColor={'p.softBlue'}
               zIndex={-1}
               borderRadius={'200px 0 0 200px'}
             />
@@ -43,7 +43,8 @@ export default function Hero() {
               </Text>
               <ButtonGroup spacing="6" mt={'8'}>
                 <Button
-                  colorScheme="blue"
+                  bgColor={'p.softBlue'}
+                  color={'white'}
                   py={6}
                   px={6}
                   border={'2px solid transparent'}
