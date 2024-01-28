@@ -25,12 +25,12 @@ export default function Faq() {
           answered please feel free to email us.
         </Text>
       </Container>
-      <Container maxW={'2xl'}>
+      <Container maxW={'2xl'} fontSize={'xl'}>
         <Accordion allowToggle>
           <AccordionItem>
             <h2>
               <AccordionButton>
-                <Box as="span" flex="1" textAlign="left">
+                <Box as="span" flex="1" textAlign="left" fontSize={'xl'}>
                   What is Bookmark?
                 </Box>
                 <AccordionIcon />
@@ -47,7 +47,7 @@ export default function Faq() {
           <AccordionItem>
             <h2>
               <AccordionButton>
-                <Box as="span" flex="1" textAlign="left">
+                <Box as="span" flex="1" textAlign="left" fontSize={'xl'}>
                   How can I request a new browser?
                 </Box>
                 <AccordionIcon />
@@ -64,7 +64,7 @@ export default function Faq() {
           <AccordionItem>
             <h2>
               <AccordionButton>
-                <Box as="span" flex="1" textAlign="left">
+                <Box as="span" flex="1" textAlign="left" fontSize={'xl'}>
                   Is there a mobile app?
                 </Box>
                 <AccordionIcon />
@@ -81,7 +81,7 @@ export default function Faq() {
           <AccordionItem>
             <h2>
               <AccordionButton>
-                <Box as="span" flex="1" textAlign="left">
+                <Box as="span" flex="1" textAlign="left " fontSize={'xl'}>
                   What about other Chromium browsers?
                 </Box>
                 <AccordionIcon />
@@ -101,7 +101,18 @@ export default function Faq() {
         justifyContent="center" // Center horizontally
         mt={14}
       >
-        <Button colorScheme="blue" p={6}>
+        <Button
+          colorScheme="blue"
+          p={6}
+          mx={10}
+          border={'2px solid transparent'}
+          _hover={{
+            border: '2px solid blue',
+            bg: 'white',
+            color: 'black',
+          }}
+          shadow={'md'}
+        >
           More Info
         </Button>
       </Flex>

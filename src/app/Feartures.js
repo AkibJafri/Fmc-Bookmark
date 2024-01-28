@@ -13,32 +13,14 @@ const tabsData = [
   {
     label: 'Simple Bookmarking',
     content: 'Content for Simple Bookmarking',
-    styles: {
-      fontWeight: '500',
-      fontSize: { base: 'md', lg: 'xl' },
-      color: 'grey',
-      _selected: { color: 'black' },
-    },
   },
   {
     label: 'Speedy Searching',
     content: 'Content for Speedy Searching',
-    styles: {
-      fontWeight: '500',
-      fontSize: { base: 'md', lg: 'xl' },
-      color: 'grey',
-      _selected: { color: 'black' },
-    },
   },
   {
     label: 'Easy Sharing',
     content: 'Content for Easy Sharing',
-    styles: {
-      fontWeight: '500',
-      fontSize: { base: 'md', lg: 'xl' },
-      color: 'grey',
-      _selected: { color: 'black' },
-    },
   },
 ]
 
@@ -54,7 +36,18 @@ export default function YourComponent() {
         >
           {tabsData.map((tab, index) => (
             <React.Fragment key={index}>
-              <Tab {...tab.styles}>{tab.label}</Tab>
+              <Tab
+                _hover={{
+                  borderBottomColor: 'red.400',
+                }}
+                borderBottom={'4px solid transparent'}
+                fontWeight={'500'}
+                fontSize={{ base: 'md', lg: 'xl' }}
+                color={'grey'}
+                _selected={{ color: 'black', borderBottomColor: 'red.500' }}
+              >
+                {tab.label}
+              </Tab>
               {index < tabsData.length - 1 && (
                 <Divider orientation="vertical" />
               )}

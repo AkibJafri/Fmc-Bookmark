@@ -15,7 +15,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <Box>
-      <Container maxW={'full'} py={'50'} bgColor={'blue.500'}>
+      <Container maxW={'full'} py={'50'} bgColor={'blue.500'} mx={'auto'}>
         <Box textAlign={'center'} mt={20} textColor={'white'}>
           <Text mt={20} letterSpacing={10}>
             35,000+ already joined
@@ -33,20 +33,30 @@ export default function Footer() {
           flexDirection={{ base: 'column', lg: 'row' }} // Column on mobile, Row on laptop
           alignItems="center" // Center vertically
           justifyContent="center" // Center horizontally
-          mt={14}
+          my={14}
           gap={'4'}
-          w={'full'}
         >
           <Input
             type="email"
             placeholder="Enter your email address "
             required
-            width={{ base: '60%', lg: '40%' }}
+            width={{ base: '60%', lg: '30%' }}
             color="teal"
             _placeholder={{ color: 'inherit' }}
             bgColor={'white'}
           />
-          <Button px={8} width={{ base: '60%', lg: 'auto' }} border={'none'}>
+          <Button
+            colorScheme={'red'}
+            px={8}
+            width={{ base: '60%', lg: 'auto' }}
+            border={'2px solid transparent'}
+            _hover={{
+              border: '2px solid red',
+              bg: 'white',
+              color: 'black',
+            }}
+            shadow={'md'}
+          >
             Contact us
           </Button>
         </Flex>

@@ -60,7 +60,7 @@ export default function Cards() {
           {cardData.map((card, index) => (
             <Card
               key={index}
-              boxShadow="xl"
+              boxShadow="md"
               maxW={{ base: 'xs', lg: 'xs' }}
               py={4}
               mb={index === 1 ? -20 : index === 2 ? -32 : 0}
@@ -76,7 +76,17 @@ export default function Cards() {
               </Box>
               <Image src="/bg-dots.svg" alt="" mb={6} />
 
-              <Button colorScheme="blue" mx={10}>
+              <Button
+                colorScheme="blue"
+                mx={10}
+                border={'2px solid transparent'}
+                _hover={{
+                  border: '2px solid blue',
+                  bg: 'white',
+                  color: 'black',
+                }}
+                shadow={'md'}
+              >
                 {card.btn}
               </Button>
             </Card>

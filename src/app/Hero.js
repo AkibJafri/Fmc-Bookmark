@@ -42,10 +42,31 @@ export default function Hero() {
                 instantly. Try it for free.
               </Text>
               <ButtonGroup spacing="2" mt={'8'}>
-                <Button colorScheme="blue" py={6}>
-                  Get irt on Chrome
+                <Button
+                  colorScheme="blue"
+                  py={6}
+                  border={'2px solid transparent'}
+                  _hover={{
+                    border: '2px solid blue',
+                    bg: 'white',
+                    color: 'black',
+                  }}
+                  shadow={'md'}
+                >
+                  Get it on Chrome
                 </Button>
-                <Button py={6}>Get it on Firefox</Button>
+                <Button
+                  py={6}
+                  border={'2px solid transparent'}
+                  _hover={{
+                    border: '2px solid blue',
+                    bg: 'white',
+                    color: 'black',
+                  }}
+                  shadow={'md'}
+                >
+                  Get it on Firefox
+                </Button>
               </ButtonGroup>
             </Box>
             {/* </Container> */}
