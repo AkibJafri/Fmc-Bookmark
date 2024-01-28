@@ -30,7 +30,7 @@ export default function Footer() {
         </Box>
         <Flex
           display="flex"
-          flexDirection={{ base: 'column', lg: 'row' }} // Column on mobile, Row on laptop
+          flexDirection={{ base: 'column', md: 'row' }} // Column on mobile, Row on laptop
           alignItems="center" // Center vertically
           justifyContent="center" // Center horizontally
           my={14}
@@ -48,7 +48,7 @@ export default function Footer() {
           />
           <Button
             colorScheme={'red'}
-            px={8}
+            px={{ base: '40%', md: 6 }}
             py={6}
             border={'2px solid transparent'}
             _hover={{
