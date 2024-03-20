@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bookmark Pages Website
+
+This project is a challenge taken from the website called Frontend Mentor. It involves building a website for bookmark pages using React.js with Chakra UI.
+
+## Overview
+
+The Bookmark Pages Website is a frontend project aimed at creating a user-friendly interface for managing bookmarks. Users can add, remove, and organize bookmarks efficiently, enhancing their browsing experience.
+
+## Features
+
+- Add bookmarks with custom titles and URLs
+- Remove bookmarks
+- Organize bookmarks into categories
+- Responsive design for seamless user experience across devices
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/): A React framework that enables functionality like server-side rendering and generating static websites for React-based applications.
+- [Chakra UI](https://chakra-ui.com/): A simple, modular, and accessible component library for building React applications with ease.
 
 ## Getting Started
 
-First, run the development server:
+To run the project locally:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository: `git clone https://github.com/AkibJafri/Fmc-bookmark-pages.git`
+2. Navigate to the project directory: `cd Fmc-bookmark-pages`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Once the development server is running, open your web browser and navigate to `http://localhost:3000` to view the Bookmark Pages Website. From there, you can interact with the interface to add, remove, and organize bookmarks.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Screenshots
 
-## Learn More
+![Screenshot](/path/to/screenshot.png)
 
-To learn more about Next.js, take a look at the following resources:
+## Website
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[Bookmark Pages Website](https://fmc-bookmark-landing-page-czet.vercel.app/): Visit the live version of the Bookmark Pages Website.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/my-feature`)
+3. Make your changes
+4. Commit your changes (`git commit -am 'Add new feature'`)
+5. Push to the branch (`git push origin feature/my-feature`)
+6. Create a new Pull Request
