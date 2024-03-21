@@ -33,7 +33,16 @@ To run the project locally:
 
 ## Screenshots
 
-![image](https://github.com/AkibJafri/Fmc-Bookmark-landing-page/assets/111608954/30dcd6f0-3f6a-474a-a1f4-49b541692cc1)
+
+<img width="490" alt="image" src="https://github.com/AkibJafri/Fmc-Bookmark-landing-page/assets/111608954/7edb87a8-cd23-45d4-bf7f-58241821943e">
+<img width="500" alt="image" src="https://github.com/AkibJafri/Fmc-Bookmark-landing-page/assets/111608954/95e06d64-2c0c-4b36-a49a-b42748688302">
+
+## Mobile View
+<img width="144" alt="image" src="https://github.com/AkibJafri/Fmc-Bookmark-landing-page/assets/111608954/84c055d0-fd91-4d14-be7a-5d8a5ca33758">
+<img width="144" alt="image" src="https://github.com/AkibJafri/Fmc-Bookmark-landing-page/assets/111608954/64d4930c-1971-494d-a1ac-cbd2af0fd87a">
+
+
+
 
 
 ## Website
