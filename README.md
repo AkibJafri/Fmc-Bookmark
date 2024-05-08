@@ -31,15 +31,15 @@ To run the project locally:
 
 🖥️ Once the development server is running, open your web browser and navigate to `http://localhost:3000` to view the Bookmark Pages Website. From there, you can interact with the interface to add, remove, and organize bookmarks.
 
-## Screenshots
+<!--## Screenshots
 
 
-<img width="490" alt="image" src="https://github.com/AkibJafri/Fmc-Bookmark-landing-page/assets/111608954/7edb87a8-cd23-45d4-bf7f-58241821943e">
-<img width="500" alt="image" src="https://github.com/AkibJafri/Fmc-Bookmark-landing-page/assets/111608954/95e06d64-2c0c-4b36-a49a-b42748688302">
+<!--<img width="490" alt="image" src="https://github.com/AkibJafri/Fmc-Bookmark-landing-page/assets/111608954/7edb87a8-cd23-45d4-bf7f-58241821943e">
+<!-- <img width="500" alt="image" src="https://github.com/AkibJafri/Fmc-Bookmark-landing-page/assets/111608954/95e06d64-2c0c-4b36-a49a-b42748688302">
 
-## Mobile View
-<img width="144" alt="image" src="https://github.com/AkibJafri/Fmc-Bookmark-landing-page/assets/111608954/84c055d0-fd91-4d14-be7a-5d8a5ca33758">
-<img width="144" alt="image" src="https://github.com/AkibJafri/Fmc-Bookmark-landing-page/assets/111608954/64d4930c-1971-494d-a1ac-cbd2af0fd87a">
+<!-- ## Mobile View
+<!-- <img width="144" alt="image" src="https://github.com/AkibJafri/Fmc-Bookmark-landing-page/assets/111608954/84c055d0-fd91-4d14-be7a-5d8a5ca33758"> -->
+<!-- <img width="144" alt="image" src="https://github.com/AkibJafri/Fmc-Bookmark-landing-page/assets/111608954/64d4930c-1971-494d-a1ac-cbd2af0fd87a"> -->
 
 
 
